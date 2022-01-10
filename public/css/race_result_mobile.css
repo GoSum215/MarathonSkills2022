@@ -1,0 +1,124 @@
+.card_ {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: #2F9A54;
+    padding: 23px 20px 23px 27px;
+    transition: all 0.3s;
+    margin-top: 56px;
+}
+
+.card_:hover {
+    background-color: #31A256;
+}
+
+.collum1_ {
+    width: 135px;
+    height: 135px;
+    border-radius: 12px;
+}
+
+.collum2_ {
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: white;
+    justify-content: space-around;
+}
+
+.collum3_ {
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    justify-content: space-around;
+}
+
+.row_ {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_none {
+    display: none;
+}
+
+.table {
+    width: 100%;
+    max-width: 350px;
+    /*    display: flex;
+        flex-direction: column;
+        justify-content: left;*/
+    border-radius: 15px;
+    border: 1px solid #979797;
+    background-color: #DBDBDB;
+    transform: translate(12px, 0);
+}
+
+.row_table {
+    width: 100%;
+    max-width: 350px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.row_table:nth-child(2n) {
+    background-color: #A2D8AE;
+}
+
+.row_table:last-of-type {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.number {
+    width: 40px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fio {
+    width: 220px;
+    min-height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.race_time {
+    width: 100px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age {
+    width: 60px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.megal {
+    position: absolute;
+    left: -30px;
+    height: 25px;
+    width: 25px;
+}

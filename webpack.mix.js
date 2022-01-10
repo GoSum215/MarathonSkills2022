@@ -15,3 +15,6 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+mix.copyDirectory('resources/images', 'public/images');
+mix.copyDirectory('resources/css', 'public/css');
