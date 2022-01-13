@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddMarathonController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProfileController;
@@ -31,6 +32,18 @@ Route::get('/result', function () {
 
 Route::get('/info', function () {
     return view('info_about_marathon');
+});
+
+Route::get('/calculator', function () {
+    return view('calculator');
+});
+
+Route::get('/add_marathon', [AddMarathonController::class, 'create'])->name('add_marathon');
+
+Route::post('/add_marathon/save', [AddMarathonController::class, 'save'])->name('save_marathon');
+
+Route::get('/edit_marathon', function () {
+    return view('edit_marathon');
 });
 
 Route::match(['get', 'post'], '/registration', RegistrationController::class)->name('registration');

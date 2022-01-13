@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+}
+
+.all {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.main_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 875px;
+    height: 700px;
+    left: 95px;
+    top: 316px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    background: #2F9A54;
+    border-radius: 25px;
+}
+
+.name_block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    margin-left: 15px;
+}
+
+
+h1 {
+   font-size: 30px;
+   font-family: 'Segoe UI';
+   font-weight:400;
+   color: white;
+   margin-top: 10px;
+   margin-right: 25px;
+}
+
+.form_block {
+    width: 65%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -250px;
+    /* background: blue; */
+}
+
+.data_div {
+    width: 100%;
+    height: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    /* background: chocolate; */
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight:400;
+    color: white;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#description {
+    height: 100px;
+}
+
+#description_label{
+    margin-right: 5px;
+}
+
+.description {
+    display: flex;
+    margin-top: 2px;
+}
+
+.name_column{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    /* background:darkgoldenrod; */
+    color: white;
+    font-family: 'Segoe UI';
+    margin-left: 240px;
+    margin-top: 30px;
+}
+
+.name_column div {
+    margin-left: 55px;
+}
+
+.distance_div {
+    /* background: darkgrey; */
+    width: 60%;
+    margin-left: 120px;
+}
+
+.distance_div div{
+    display: flex;
+    
+}
+
+.distance_div label {
+    width: 400px;
+    font-size: 18px;
+}
+
+.distance_div input {
+    width: 550px;
+}
+
+#check {
+    margin-top: 2px;
+}
+
+.sub {
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub input {
+    width: 268px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color:#2b834a;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    transition: all ease 0.3s;
+    margin-left: 220px;
+}
+
+.sub input:hover {
+    background: #dadada;
+}

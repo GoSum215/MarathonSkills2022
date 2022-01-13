@@ -5,13 +5,15 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 /**
- * @property string $marathonName
- * @property int $eventId
- * @property string $cityName
- * @property int $countryCode
- * @property int $yearHeld
+ * @property string $marathon_name
+ * @property string $slug
+ * @property string $country
+ * @property string $city_name
+ * @property int $country_id
+ * @property int $year_held
  * @property string $description
  * @property Carbon $created_at
  * @property Carbon $updated_at
@@ -20,4 +22,13 @@ use Illuminate\Database\Eloquent\Model;
 class Marathon extends Model
 {
     use HasFactory;
+    use Sluggable;
+
+    public function sluggable() : array {
+        return [
+            'slug' => [
+                'source' => 'marathon_name'
+            ]
+        ];
+    }
 }

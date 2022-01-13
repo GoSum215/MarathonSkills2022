@@ -1,0 +1,205 @@
+.flex_block{
+    display: flex;
+}
+
+.first_main_block{
+    width: 50%;
+    height: 800px;
+    /* background: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.first_calculate{
+    width: 350px;
+    height: 225px;
+    background: #2F9A54;
+    margin-bottom: 20px;
+    border-radius: 22px;
+}
+
+form{
+    width: 100%;
+    height: 90px;
+    /* background: chocolate; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.fields{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: violet; */
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.fields input{
+    width: 40px;
+    height: 23px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.space{
+    width: 60px;
+}
+
+.submit_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submit_block input{
+    border-radius: 10px;
+    border: none;
+    color:white;
+    color:#2F9A54;
+    width: 110px;
+    height: 30px;
+    transition: all ease 0.3s;
+    font-weight: bold;
+}
+
+.submit_block input:hover{
+    background: #dadada;
+}
+
+.first_calculate .hr_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first_calculate hr{
+    border:0.1px solid rgba(0, 0, 0, 0.28);
+    width: 90%;
+}
+
+.first_calculate .information{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.picture_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 425px;
+    border: 1px solid black;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.picture{
+    height: 100%;
+    width: 100%;
+}
+
+.vertical{
+    border-left:1px solid black;
+    height: 800px;
+}
+
+
+.second_main_block{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #696969;     */
+}
+
+.second_calculate{
+    width: 450px;
+    height: 410px;
+    background: #2F9A54;
+    margin-bottom: 20px;
+    border-radius: 22px;    
+}
+
+.second_calculate .space{
+    width: 45px;    
+}
+
+.genders_lab{
+    width: 100%;
+    /* background: chocolate; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.radio_check{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.activity_level .space{
+    width: 30px;
+}
+
+/* .radio_check input[type=radio]{
+    margin-top: 5px;
+} */
+
+.radio_form{
+    display: flex;
+    align-items: center;
+}
+
+.radio_form input{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.second_calculate .hr_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.second_calculate hr{
+    border:0.1px solid rgba(0, 0, 0, 0.28);
+    width: 90%;
+}
+
+.second_calculate .information{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+.metabolism_description{
+    width: 450px;
+    height: 125px;
+    background: #C4C4C4;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;    
+}

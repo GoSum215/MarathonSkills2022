@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/images/bogy_mass_index.jpg": "/images/bogy_mass_index.jpg",
     "/images/bronze_medal.png": "/images/bronze_medal.png",
     "/images/download.png": "/images/download.png",
     "/images/facebook.png": "/images/facebook.png",
@@ -10,13 +11,23 @@
     "/images/logo.png": "/images/logo.png",
     "/images/silver_medal.png": "/images/silver_medal.png",
     "/images/twitter.png": "/images/twitter.png",
+    "/css/add_new_marathon.css": "/css/add_new_marathon.css",
+    "/css/add_new_marathon_mobile.css": "/css/add_new_marathon_mobile.css",
     "/css/app_mobile.css": "/css/app_mobile.css",
+    "/css/calculator.css": "/css/calculator.css",
+    "/css/calculator_mobile.css": "/css/calculator_mobile.css",
+    "/css/edit_marathon.css": "/css/edit_marathon.css",
+    "/css/edit_marathon_mobile.css": "/css/edit_marathon_mobile.css",
     "/css/home_page.css": "/css/home_page.css",
     "/css/home_page_mobile.css": "/css/home_page_mobile.css",
     "/css/info_about_marathon.css": "/css/info_about_marathon.css",
     "/css/info_about_marathon_mobile.css": "/css/info_about_marathon_mobile.css",
     "/css/list_marathons.css": "/css/list_marathons.css",
     "/css/list_marathons_mobile.css": "/css/list_marathons_mobile.css",
+    "/css/login.css": "/css/login.css",
+    "/css/login_mobile.css": "/css/login_mobile.css",
     "/css/race_result.css": "/css/race_result.css",
-    "/css/race_result_mobile.css": "/css/race_result_mobile.css"
+    "/css/race_result_mobile.css": "/css/race_result_mobile.css",
+    "/css/registration.css": "/css/registration.css",
+    "/css/registration_mobile.css": "/css/registration_mobile.css"
 }

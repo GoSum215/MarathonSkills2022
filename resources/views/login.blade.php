@@ -5,12 +5,11 @@
 @endsection
 
 @section('link_style')
-    {{--<link rel="stylesheet" href="{{ asset('../css/home_page.css') }}" />
-    <link rel="stylesheet" href="{{ asset('../css/home_page_mobile.css') }}" media="(min-width:200px) and (max-width:768px)" />--}}
+    <link href="{{ asset('../css/login.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="(min-width:200px) and (max-width:768px)" href="{{ asset('../css/login_mobile.css') }}" />
 @endsection
 
 @section('content')
-    <h2>Войти</h2>
     @if ($errors->any())
         @foreach ($errors->all() as $error)
             <li>{{ $error }}</li>
@@ -19,16 +18,23 @@
     @error('name')
     <p class="error">{{ $message }}</p>
     @enderror
-    <form method="POST" action="{{ route('login') }}" class="bordered">
-        @csrf
-        <div>
-            <label>Login</label>
-            <input name="login" type="text" value="{{ old('login') }}"/>
+    <div class="main_div all">
+        <div class="name_block">
+            <h1>Вход</h1>
         </div>
-        <div>
-            <label>Password</label>
-            <input name="password" type="password" />
-        </div>
-        <input type="submit"/>
-    </form>
+        <form class="form_block" method="POST" action="{{ route('login') }}" name="add_new_marathon">
+            @csrf
+            <div class="data_div">
+                <div>
+                    <label>Логин</label>
+                    <input name="login" type="text" value="{{ old('login') }}" size="25"/>
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input type="text" name="password" size="25">
+                </div>
+            </div>
+            <div class="sub"><input type="submit" value="Войти"></div>
+        </form>
+    </div>
 @endsection
