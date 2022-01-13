@@ -13,7 +13,6 @@
     <h1>{{ $user->login }}</h1>
     <p> Role: {{ $user->role }}</p>
     <p> {{ $user->surname }}</p>
-    <p> Gender: {{ $user->gender }}</p>
     <p> {{ $user->name }}</p>
     <p> {{ $user->email }}</p>
 @endsection

@@ -28,7 +28,6 @@ class RegistrationController extends Controller
             $user->password = Hash::make($validated['password']);
             $user->name = $validated['name'];
             $user->surname = $validated['surname'];
-            $user->gender = $validated['gender'];
             $user->email = $validated['email'];
             $user->save();
             Auth::login($user);

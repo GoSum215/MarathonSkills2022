@@ -35,13 +35,6 @@
             <input name="name" type="text" value="{{ old('name') }}"/>
         </div>
         <div>
-            <label>Gender</label>
-            <select name="gender">
-                <option value=0 {{ old('gender') === 0 ? 'selected="selected"' : '' }}>Male</option>
-                <option value=1 {{ old('gender') === 1 ? 'selected="selected"' : '' }}>Female</option>
-            </select>
-        </div>
-        <div>
             <label>E-mail</label>
             <input name="email" type="text" value="{{ old('email') }}"/>
         </div>

@@ -2,9 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Enums\Gender;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class RegistrationRequest extends FormRequest
 {
@@ -30,7 +28,6 @@ class RegistrationRequest extends FormRequest
             'password' => 'required|regex:/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*.,])[0-9a-zA-Z!@#$%^&*.,]{5,30}/',
             'surname' => 'required|regex:/^[\w\. -]{5,50}$/',
             'name' => 'required|regex:/^[\w\. -]{5,30}$/',
-            'gender' => ['required', Rule::in([Gender::MALE, Gender::FEMALE])],
             'email' => 'nullable|unique:users|string|max:100|regex:/^[^@]+(@)[^.@]+(.)[^.@]+$/',
         ];
     }
