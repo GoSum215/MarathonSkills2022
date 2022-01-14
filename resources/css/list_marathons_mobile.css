@@ -73,6 +73,7 @@ h1 {
     margin: 20px;
     box-shadow: 0 0 4px -4px rgba(0, 0, 0, 0.25);
     transition: all ease 0.3s;
+    text-decoration: none;
 }
 
 .more_white {

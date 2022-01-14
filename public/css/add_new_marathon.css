@@ -33,12 +33,12 @@ body {
 
 
 h1 {
-   font-size: 30px;
-   font-family: 'Segoe UI';
-   font-weight:400;
-   color: white;
-   margin-top: 10px;
-   margin-right: 25px;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    font-weight:400;
+    color: white;
+    margin-top: 10px;
+    margin-right: 25px;
 }
 
 .form_block {
@@ -75,6 +75,20 @@ input {
     height: 25px;
     font-size: 15px;
     margin-bottom: 10px;
+    outline: none;
+}
+
+textarea{
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    overflow: auto;
+    resize: none;
+    background-color: white;
+    outline: 0;
 }
 
 #description {
@@ -89,6 +103,8 @@ input {
     display: flex;
     margin-top: 2px;
 }
+
+
 
 .name_column{
     display: flex;
@@ -106,24 +122,28 @@ input {
 }
 
 .distance_div {
-    /* background: darkgrey; */
-    width: 60%;
-    margin-left: 120px;
+    width: 330px;
+    margin-left: 150px;
 }
 
 .distance_div div{
     display: flex;
-    
 }
 
 .distance_div label {
-    width: 400px;
+    width: 80px;
     font-size: 18px;
 }
 
-.distance_div input {
-    width: 550px;
+.distance_div input[type="checkbox"]{
+    margin-left: -190px;
 }
+
+.distance_div input[type="text"] {
+    width: 215px;
+    margin-left: -150px;
+}
+
 
 #check {
     margin-top: 2px;

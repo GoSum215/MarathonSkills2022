@@ -10,24 +10,26 @@
 @endsection
 
 @section('content')
-    <div class="marathonsInfo all">
+    <a href="{{ route('list_marathons') }}" class="marathonsInfo all">
         <div class="button">
             Посмотреть информацию о марафонах
         </div>
-    </div>
-    <div class="marathonsInfo all">
+    </a>
+    @if(\Illuminate\Support\Facades\Auth::id() === 4)
+    <a href="{{ route('add_marathon') }}" class="marathonsInfo all">
         <div class="button">
-            Спонсировать бегуна
+            Добавить марафон
         </div>
-    </div>
-    <div class="marathonsInfo all">
+    </a>
+    @endif
+{{--    <div class="marathonsInfo all">
         <div class="button">
             Информация об благотворительных организациях
         </div>
-    </div>
-    <div class="marathonsInfo all">
+    </div>--}}
+    <a href="{{ route('calculator') }}" class="marathonsInfo all">
         <div class="button">
             Калькуляторы BMI и BMR
         </div>
-    </div>
+    </a>
 @endsection

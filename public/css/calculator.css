@@ -132,11 +132,11 @@ form{
     height: 410px;
     background: #2F9A54;
     margin-bottom: 20px;
-    border-radius: 22px;    
+    border-radius: 22px;
 }
 
 .second_calculate .space{
-    width: 45px;    
+    width: 45px;
 }
 
 .genders_lab{
@@ -188,6 +188,8 @@ form{
 
 .second_calculate .information{
     width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
     text-align: center;
     color: white;
 }
@@ -201,5 +203,5 @@ form{
     text-align: center;
     display: flex;
     align-items: center;
-    margin-top: 50px;    
+    margin-top: 50px;
 }

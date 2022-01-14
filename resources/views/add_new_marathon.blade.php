@@ -47,7 +47,7 @@
                 </div>
                 <div class="description">
                     <label id="description_label" for="description">Описание марафона:</label>
-                    <input id="description" type="text" name="description"/>
+                    <textarea id="description" name="description" ></textarea>
                 </div>
             </div>
             <!-- выбор дисстанций -->
@@ -58,26 +58,37 @@
             <div class="distance_div">
                 <div>
                     <label for="5km">5 км</label>
-                    <input id="check5" type="checkbox">
-                    <input type="text" name="5km" id="5km" size="25">
+                    <input type="checkbox" id="check5" onclick="showForm('5km')">
+                    <input hidden type="text" name="5km" id="5km" size="25" placeholder="Введите название дисстанции">
                 </div>
                 <div>
                     <label for="10km">10 км</label>
-                    <input id="check10" type="checkbox">
-                    <input type="text" name="10km" id="10km" size="25">
+                    <input id="check10" type="checkbox" onclick="showForm('10km')">
+                    <input hidden type="text" name="10km" id="10km" size="25" placeholder="Введите название дисстанции">
                 </div>
                 <div>
                     <label for="21km">21 км</label>
-                    <input id="check21" type="checkbox">
-                    <input type="text" name="21km" id="21km" size="25">
+                    <input id="check21" type="checkbox" onclick="showForm('21km')">
+                    <input hidden type="text" name="21km" id="21km" size="25" placeholder="Введите название дисстанции">
                 </div>
                 <div>
                     <label for="42km">42 км</label>
-                    <input id="check42" type="checkbox">
-                    <input type="text" name="42km" id="42km" size="25">
+                    <input id="check42" type="checkbox" onclick="showForm('42km')">
+                    <input hidden type="text" name="42km" id="42km" size="25" placeholder="Введите название дисстанции">
                 </div>
             </div>
             <div class="sub"><input type="submit" value="Зарегистрировать марафон"></div>
         </form>
     </div>
+    <script>
+        let i = 1;
+        function showForm(id_input){
+            if(document.getElementById(id_input).hidden == true){
+                document.getElementById(id_input).hidden = false;
+            }
+            else{
+                document.getElementById(id_input).hidden = true;
+            }
+        }
+    </script>
 @endsection

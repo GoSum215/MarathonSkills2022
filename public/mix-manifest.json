@@ -9,6 +9,7 @@
     "/images/gold_medal.png": "/images/gold_medal.png",
     "/images/instagram.png": "/images/instagram.png",
     "/images/logo.png": "/images/logo.png",
+    "/images/photo.jpg": "/images/photo.jpg",
     "/images/silver_medal.png": "/images/silver_medal.png",
     "/images/twitter.png": "/images/twitter.png",
     "/css/add_new_marathon.css": "/css/add_new_marathon.css",
@@ -26,8 +27,12 @@
     "/css/list_marathons_mobile.css": "/css/list_marathons_mobile.css",
     "/css/login.css": "/css/login.css",
     "/css/login_mobile.css": "/css/login_mobile.css",
+    "/css/profile.css": "/css/profile.css",
+    "/css/profile_mobile.css": "/css/profile_mobile.css",
     "/css/race_result.css": "/css/race_result.css",
     "/css/race_result_mobile.css": "/css/race_result_mobile.css",
     "/css/registration.css": "/css/registration.css",
-    "/css/registration_mobile.css": "/css/registration_mobile.css"
+    "/css/registration_mobile.css": "/css/registration_mobile.css",
+    "/css/runner_registration.css": "/css/runner_registration.css",
+    "/css/runner_registration_mobile.css": "/css/runner_registration_mobile.css"
 }

@@ -21,6 +21,7 @@ class LoginController extends Controller
 
             if (Auth::attempt($validated)) {
                 $request->session()->regenerate();
+                //$request->session()->put('role', );
                 return redirect()->route('profile');
             }
 

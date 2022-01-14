@@ -10,18 +10,23 @@
 @endsection
 
 @section('content')
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <div class="main_div all">
         <div class="name_block">
-            <h1>Кросс “Быстрый пёс”</h1>
+            <h1>{{ $marathon->marathon_name }}</h1>
         </div>
         <div class="info_block">
             <div class="place_info">
-                <div class="info_block_text">Дата: 17.04.2022</div>
-                <div class="info_block_text">Город: Владивосток</div>
-                <div class="info_block_text">Страна: Россия</div>
+                <div class="info_block_text">Дата: {{ $marathon->start_date }}</div>
+                <div class="info_block_text">Город: {{ $marathon->city_name }}</div>
+                <div class="info_block_text">Страна: {{ $marathon->country }}</div>
             </div>
             <div class="description">
-                <div class="info_block_text">Внезапно, путь этого марафона будет проходить по мостам Владивостока. Наслаждайтесь видами города!</div>
+                <div class="info_block_text">{{ $marathon->description }}</div>
             </div>
             <div class="photo_block">
                 <img class="photo" src="{{ asset('../images/foto_marathona.png') }}" alt="photo">
@@ -30,16 +35,25 @@
 
         <div class="form_block">
             <div class="distance info_block_text">Выбор дисстанции:</div>
-            <form action="" method="get" name="distance">
+            <form action="{{ route('reg_for_marathon', ['slug' => $slug]) }}" method="post" name="distance">
+                @csrf
                 <div class="input_block">
-                    <input type="radio" id="distance1" name="distance" class="custom_checkbox" value="5" checked>
+                    @if(isset($eve[0]))
+                    <input type="radio" id="distance1" name="distance" class="custom_checkbox" value="0" required>
                     <label for="distance1">5км</label>
-
-                    <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="21" >
+                    @endif
+                    @if(isset($eve[1]))
+                    <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="1" required>
+                    <label for="distance2">10км</label>
+                    @endif
+                    @if(isset($eve[2]))
+                    <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="2" required>
                     <label for="distance2">21км</label>
-
-                    <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="42" >
+                    @endif
+                    @if(isset($eve[3]))
+                    <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="3" required>
                     <label for="distance3">42км</label>
+                    @endif
                 </div>
                 <div class="sub"><input type="submit" value="Зарегестрироваться"></div>
             </form>

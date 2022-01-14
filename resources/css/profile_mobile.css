@@ -1,0 +1,67 @@
+.profileBlock {
+    width: 400px;
+    height: 500px;
+    background: #2F9A54;
+    border-radius: 22px;
+    align-self: center;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 40px;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+}
+.infoBlock {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.imageName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.imageName img {
+    height: 200px;
+    width: 200px;
+}
+.redactorButton {
+    width: 144px;
+    height: 29px;
+    left: 1151px;
+    top: 94px;
+    font-size: 18px;
+    background: white;
+    color: #0dcd39;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 -1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.myrunsButton {
+    width: 160px;
+    height: 40px;
+    left: 1151px;
+    top: 94px;
+    font-size: 24px;
+    margin-top: 80px;
+    background: white;
+    color: #0dcd39;
+    text-align: center;
+    align-self: end;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 -1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}

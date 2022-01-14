@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <label for="password">Пароль:</label>
-                    <input type="text" name="password" size="25">
+                    <input type="password" name="password" size="25">
                 </div>
             </div>
             <div class="sub"><input type="submit" value="Войти"></div>

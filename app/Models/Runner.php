@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property
+ * @property int $user_id
+ * @property int $gender
+ * @property string $country
+ * @property Carbon $date_of_birthday
  * @property Carbon $created_at
  * @property Carbon $updated_at
  */

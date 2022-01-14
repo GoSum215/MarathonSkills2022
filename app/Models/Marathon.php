@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 
 /**
+ * @property int $id
  * @property string $marathon_name
  * @property string $slug
  * @property string $country
@@ -30,5 +31,9 @@ class Marathon extends Model
                 'source' => 'marathon_name'
             ]
         ];
+    }
+
+    public function events() {
+        return $this->hasMany(Event::class);
     }
 }

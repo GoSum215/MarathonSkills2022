@@ -5,14 +5,25 @@
 @endsection
 
 @section('link_style')
-    {{--<link rel="stylesheet" href="{{ asset('../css/home_page.css') }}" />
-    <link rel="stylesheet" href="{{ asset('../css/home_page_mobile.css') }}" media="(min-width:200px) and (max-width:768px)" />--}}
+    <link href="{{ asset('../css/profile.css') }}" rel="stylesheet">
+    <link rel="stylesheet" media="(min-width:200px) and (max-width:768px)" href="{{ asset('../css/profile_mobile.css') }}">
 @endsection
 
 @section('content')
-    <h1>{{ $user->login }}</h1>
-    <p> Role: {{ $user->role }}</p>
-    <p> {{ $user->surname }}</p>
-    <p> {{ $user->name }}</p>
-    <p> {{ $user->email }}</p>
+    <div class="profileBlock">
+        <a>Личный кабинет</a>
+        <div class="profileInfo">
+            <div class="imageName">
+                <img src="../images/photo.jpg">
+                <a style="align-self: center">{{ $user->surname }} {{ $user->name }}</a>
+            </div>
+            <div class="infoBlock">
+                <a>Логин: {{ $user->login }}</a>
+                <a>Почта: {{ $user->email }}</a>
+{{--                <div class="myrunsButton">
+                    <a>Мои забеги</a>
+                </div>--}}
+            </div>
+        </div>
+    </div>
 @endsection

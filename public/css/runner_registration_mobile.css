@@ -13,8 +13,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 400px;
-    height: 850px;
+    width: 500px;
+    height: 450px;
     left: 95px;
     top: 316px;
     margin-top: 60px;
@@ -42,8 +42,8 @@ h1 {
 }
 
 .form_block {
-    width: 65%;
-    height: 88%;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,17 +53,17 @@ h1 {
 
 .data_div {
     width: 100%;
-    height: 450px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
     flex-wrap: wrap;
     /* background: chocolate; */
-    margin-left: 150px;
+    margin-left: -30px;
 }
 
 label {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Segoe UI';
     font-weight:400;
     color: white;
@@ -72,7 +72,7 @@ label {
 input {
     border: none;
     border-radius: 5px;
-    width: 350px;
+    width: 200px;
     height: 25px;
     font-size: 15px;
     margin-bottom: 10px;
@@ -109,26 +109,24 @@ input {
 }
 
 .distance_div {
-    width: 310px;
+    /* background: darkgrey; */
+    width: 135%;
     margin-left: 250px;
+    /* margin-top: 100px; */
 }
 
 .distance_div div{
     display: flex;
+    /* justify-content: center; */
 }
 
 .distance_div label {
-    width: 80px;
+    width: 400px;
     font-size: 18px;
 }
 
-.distance_div input[type="checkbox"]{
-    margin-left: -190px;
-}
-
-.distance_div input[type="text"] {
-    width: 215px;
-    margin-left: -150px;
+.distance_div input {
+    width: 550px;
 }
 
 #check {
@@ -157,6 +155,7 @@ input {
     font-family: 'Segoe UI';
     transition: all ease 0.3s;
     margin-left: 220px;
+    margin-bottom: 50px;
 }
 
 .sub input:hover {

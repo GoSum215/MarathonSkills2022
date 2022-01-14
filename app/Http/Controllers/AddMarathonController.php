@@ -23,6 +23,8 @@ class AddMarathonController extends Controller
         $validated = $request->validate(
             MarathonRequest::rules()
         );
+        $cost = $validated['cost'];
+        $date = $validated['date'];
 
         $marathon = new Marathon();
         $marathon->marathon_name = $validated['marathon_name'];
@@ -31,9 +33,9 @@ class AddMarathonController extends Controller
         $marathon->year_held = 0;
         $marathon->country_id = 1;
         $marathon->description = $validated['description'];
+        $marathon->cost = $cost;
+        $marathon->start_date = $date;
         $marathon->save();
-        $cost = $validated['cost'];
-        $date = $validated['date'];
 
         $marathonId = Marathon::query()
             ->where('marathon_name', $validated['marathon_name'])
