@@ -14,7 +14,7 @@ use Cviebrock\EloquentSluggable\Sluggable;
  * @property string $country
  * @property string $city_name
  * @property int $country_id
- * @property int $year_held
+ * @property Carbon $date_start_marathon
  * @property string $description
  * @property Carbon $created_at
  * @property Carbon $updated_at

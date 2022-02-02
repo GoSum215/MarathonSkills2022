@@ -109,7 +109,7 @@ input {
 }
 
 .distance_div {
-    width: 310px;
+    width: 360px;
     margin-left: 250px;
 }
 
@@ -127,8 +127,13 @@ input {
 }
 
 .distance_div input[type="text"] {
-    width: 215px;
-    margin-left: -150px;
+    width: 190px;
+    margin-left: -160px;
+}
+
+.distance_div input[type="time"] {
+    width: 75px;
+    margin-left: 5px;
 }
 
 #check {

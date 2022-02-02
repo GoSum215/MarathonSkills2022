@@ -118,11 +118,11 @@ textarea{
 }
 
 .name_column div {
-    margin-left: 55px;
+    margin-left: 50px;
 }
 
 .distance_div {
-    width: 330px;
+    width: 410px;
     margin-left: 150px;
 }
 
@@ -144,6 +144,10 @@ textarea{
     margin-left: -150px;
 }
 
+.distance_div input[type="time"] {
+    width: 80px;
+    margin-left: 10px;
+}
 
 #check {
     margin-top: 2px;

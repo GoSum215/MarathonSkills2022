@@ -18,8 +18,7 @@ class EventFactory extends Factory
             'event_name' => $this->faker->realTextBetween(5,20),
             'event_type' => $this->faker->randomElement([0,1,2,3]),
             'marathon_id' => $this->faker->randomElement(Marathon::query()->pluck('id')),
-            'start_data' => $this->faker->numberBetween(0, 1000000),
-            'start_data_time' => $this->faker->dateTimeBetween('-2 years', '+4 years'),
+            'time_start_event' => $this->faker->dateTimeBetween()->format('H:i:s'),
             'max_participants' => $this->faker->numberBetween(100, 1000),
             'cost' => $this->faker->numberBetween(300, 1000),
         ];
