@@ -26,7 +26,7 @@
             <div class="row">{{ $marathon->country }}</div>
         </div>
         <div class="collum2 @if($i % 2 === 1) collum2_white @endif">
-            <div class="row">{{ $marathon->start_date }}</div>
+            <div class="row">{{ $marathon->date_start_marathon }}</div>
             <div class="row">{{ $marathon->cost }}$</div>
             <a href="{{ route('info_marathon', ['slug' => $marathon->slug]) }}" class="more @if($i % 2 === 1) more_white @endif">Подробнее</a>
         </div>

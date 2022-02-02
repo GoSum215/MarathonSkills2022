@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Runner;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
@@ -14,10 +15,17 @@ class UserResource extends JsonResource
      */
     public function toArray($request) : array
     {
+//        $runner = RunnerResource::collection($this->runners);
+//        if($runner === null) {
+//            $runner = "Null";
+//        }
+
         return [
             'login' => $this->login,
             'name' => $this->name,
+            'surname' => $this->surname,
             'email' => $this->email,
+//            'runners' => $runner,
         ];
     }
 }

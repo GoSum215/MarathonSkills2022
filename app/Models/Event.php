@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $event_name
  * @property int $event_type
  * @property int $marathon_id
- * @property string $start_data
+ * @property Carbon $time_start_event
  * @property int $max_participants
  * @property int $cost
  * @property Carbon $created_at

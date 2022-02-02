@@ -21,7 +21,7 @@
         </div>
         <div class="info_block">
             <div class="place_info">
-                <div class="info_block_text">Дата: {{ $marathon->start_date }}</div>
+                <div class="info_block_text">Дата: {{ $marathon->date_start_marathon }}</div>
                 <div class="info_block_text">Город: {{ $marathon->city_name }}</div>
                 <div class="info_block_text">Страна: {{ $marathon->country }}</div>
             </div>

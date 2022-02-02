@@ -24,17 +24,15 @@ class AddMarathonController extends Controller
             MarathonRequest::rules()
         );
         $cost = $validated['cost'];
-        $date = $validated['date'];
 
         $marathon = new Marathon();
         $marathon->marathon_name = $validated['marathon_name'];
         $marathon->country = $validated['country'];
         $marathon->city_name = $validated['city'];
-        $marathon->year_held = 0;
         $marathon->country_id = 1;
         $marathon->description = $validated['description'];
+        $marathon->date_start_marathon = $validated['date'];
         $marathon->cost = $cost;
-        $marathon->start_date = $date;
         $marathon->save();
 
         $marathonId = Marathon::query()
@@ -48,8 +46,7 @@ class AddMarathonController extends Controller
             $event->event_name = $validated['5km'];
             $event->event_type = EventType::SMALL_MARATHON;
             $event->max_participants = random_int(300, 500);
-            $event->start_data = $date;
-            $event->start_data_time = now();
+            $event->time_start_event = $validated['time5'];
             $event->save();
         }
         if($validated['10km']) {
@@ -59,8 +56,7 @@ class AddMarathonController extends Controller
             $event->event_name = $validated['10km'];
             $event->event_type = EventType::QUARTER_MARATHON;
             $event->max_participants = random_int(300, 500);
-            $event->start_data = $date;
-            $event->start_data_time = now();
+            $event->time_start_event = $validated['time10'];
             $event->save();
         }
         if($validated['21km']) {
@@ -70,8 +66,7 @@ class AddMarathonController extends Controller
             $event->event_name = $validated['21km'];
             $event->event_type = EventType::HALF_MARATHON;
             $event->max_participants = random_int(300, 500);
-            $event->start_data = $date;
-            $event->start_data_time = now();
+            $event->time_start_event = $validated['time21'];
             $event->save();
         }
         if($validated['42km']) {
@@ -81,8 +76,7 @@ class AddMarathonController extends Controller
             $event->event_name = $validated['42km'];
             $event->event_type = EventType::MARATHON;
             $event->max_participants = random_int(300, 500);
-            $event->start_data = $date;
-            $event->start_data_time = now();
+            $event->time_start_event = $validated['time42'];
             $event->save();
         }
 

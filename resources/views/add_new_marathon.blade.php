@@ -27,23 +27,23 @@
             <div class="data_div">
                 <div>
                     <label for="name">Название марафона:</label>
-                    <input type="text" name="marathon_name"  size="25">
+                    <input type="text" name="marathon_name" id="name" size="25">
                 </div>
                 <div>
                     <label for="country">Страна:</label>
-                    <input type="text" name="country" size="25">
+                    <input type="text" name="country" id="country" size="25">
                 </div>
                 <div>
                     <label for="city">Город:</label>
-                    <input type="text" name="city"  size="25">
+                    <input type="text" name="city" id="city" size="25">
                 </div>
                 <div>
                     <label for="date">Дата:</label>
-                    <input type="text" name="date"  size="25">
+                    <input type="date" name="date" id="date" min="2022-01-01" size="25">
                 </div>
                 <div>
                     <label for="cost">Цена:</label>
-                    <input type="text" name="cost"  size="25">
+                    <input type="text" name="cost" id="cost" size="25">
                 </div>
                 <div class="description">
                     <label id="description_label" for="description">Описание марафона:</label>
@@ -58,23 +58,27 @@
             <div class="distance_div">
                 <div>
                     <label for="5km">5 км</label>
-                    <input type="checkbox" id="check5" onclick="showForm('5km')">
+                    <input type="checkbox" id="check5" onclick="showForm('5km', 'time5')">
                     <input hidden type="text" name="5km" id="5km" size="25" placeholder="Введите название дисстанции">
+                    <input hidden type="time" name="time5" id="time5">
                 </div>
                 <div>
                     <label for="10km">10 км</label>
-                    <input id="check10" type="checkbox" onclick="showForm('10km')">
+                    <input type="checkbox" id="check5" onclick="showForm('10km', 'time10')">
                     <input hidden type="text" name="10km" id="10km" size="25" placeholder="Введите название дисстанции">
+                    <input hidden type="time" name="time10" id="time10">
                 </div>
                 <div>
                     <label for="21km">21 км</label>
-                    <input id="check21" type="checkbox" onclick="showForm('21km')">
+                    <input type="checkbox" id="check5" onclick="showForm('21km', 'time21')">
                     <input hidden type="text" name="21km" id="21km" size="25" placeholder="Введите название дисстанции">
+                    <input hidden type="time" name="time21" id="time21">
                 </div>
                 <div>
                     <label for="42km">42 км</label>
-                    <input id="check42" type="checkbox" onclick="showForm('42km')">
+                    <input type="checkbox" id="check5" onclick="showForm('42km', 'time42')">
                     <input hidden type="text" name="42km" id="42km" size="25" placeholder="Введите название дисстанции">
+                    <input hidden type="time" name="time42" id="time42">
                 </div>
             </div>
             <div class="sub"><input type="submit" value="Зарегистрировать марафон"></div>
@@ -82,13 +86,9 @@
     </div>
     <script>
         let i = 1;
-        function showForm(id_input){
-            if(document.getElementById(id_input).hidden == true){
-                document.getElementById(id_input).hidden = false;
-            }
-            else{
-                document.getElementById(id_input).hidden = true;
-            }
+        function showForm(id_input, id_time){
+            document.getElementById(id_input).hidden = !(document.getElementById(id_input).hidden);
+            document.getElementById(id_time).hidden = !(document.getElementById(id_time).hidden);
         }
     </script>
 @endsection

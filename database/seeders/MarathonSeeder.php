@@ -16,6 +16,6 @@ class MarathonSeeder extends Seeder
     public function run()
     {
         Marathon::query()->delete();
-        Marathon::factory(random_int(5, 15))->create();
+        Marathon::factory(random_int(10, 15))->create();
     }
 }
