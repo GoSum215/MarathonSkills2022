@@ -25,19 +25,19 @@ class MarathonRequest extends FormRequest
     {
         return [
             'marathon_name' => ['required','unique:marathons','string','max:40'],
-            'country' => ['required','string','max:50'],
-            'city' => ['required','string','max:50'],
+            'country' => ['required','regex:/^[\w\. -]{3,50}$/'],
+            'city' => ['required','regex:/^[\w\. -]{3,50}$/'],
             'date' => ['required','date'],
             'cost' => ['required','integer','numeric'],
-            'description' => ['required','string','max:250'],
+            'description' => ['required','string','max:100'],
             '5km' => ['nullable','string','max:40'],
             '10km' => ['nullable','string','max:40'],
             '21km' => ['nullable','string','max:40'],
             '42km' => ['nullable','string','max:40'],
-            'time5' => ['nullable','required_with:5km'],
-            'time10' => ['nullable','required_with:10km'],
-            'time21' => ['nullable','required_with:21km'],
-            'time42' => ['nullable','required_with:42km'],
+            'time5' => ['nullable','required_with:5km','time'],
+            'time10' => ['nullable','required_with:10km','time'],
+            'time21' => ['nullable','required_with:21km','time'],
+            'time42' => ['nullable','required_with:42km','time'],
         ];
     }
 }
