@@ -64,19 +64,19 @@
                 </div>
                 <div>
                     <label for="10km">10 км</label>
-                    <input type="checkbox" id="check5" onclick="showForm('10km', 'time10')">
+                    <input type="checkbox" id="check5" onclick="showForm('5km', 'time5')">
                     <input hidden type="text" name="10km" id="10km" size="25" placeholder="Введите название дисстанции">
                     <input hidden type="time" name="time10" id="time10">
                 </div>
                 <div>
                     <label for="21km">21 км</label>
-                    <input type="checkbox" id="check5" onclick="showForm('21km', 'time21')">
+                    <input type="checkbox" id="check5" onclick="showForm('5km', 'time5')">
                     <input hidden type="text" name="21km" id="21km" size="25" placeholder="Введите название дисстанции">
                     <input hidden type="time" name="time21" id="time21">
                 </div>
                 <div>
                     <label for="42km">42 км</label>
-                    <input type="checkbox" id="check5" onclick="showForm('42km', 'time42')">
+                    <input type="checkbox" id="check5" onclick="showForm('5km', 'time5')">
                     <input hidden type="text" name="42km" id="42km" size="25" placeholder="Введите название дисстанции">
                     <input hidden type="time" name="time42" id="time42">
                 </div>
