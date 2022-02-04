@@ -15,6 +15,7 @@
 .imageName img {
     height: 300px;
     width: 300px;
+    border-radius: 3px;
 }
 .profileInfo {
     display: flex;

@@ -47,12 +47,12 @@
                     <label for="distance2">10км</label>
                     @endif
                     @if(isset($eve[2]))
-                    <input type="radio" id="distance2" name="distance" class="custom_checkbox" value="2" required>
-                    <label for="distance2">21км</label>
+                    <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="2" required>
+                    <label for="distance3">21км</label>
                     @endif
                     @if(isset($eve[3]))
-                    <input type="radio" id="distance3" name="distance" class="custom_checkbox" value="3" required>
-                    <label for="distance3">42км</label>
+                    <input type="radio" id="distance4" name="distance" class="custom_checkbox" value="3" required>
+                    <label for="distance4">42км</label>
                     @endif
                 </div>
                 <div class="sub"><input type="submit" value="Зарегестрироваться"></div>

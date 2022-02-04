@@ -37,6 +37,7 @@
 .imageName img {
     height: 200px;
     width: 200px;
+    border-radius: 2px;
 }
 .redactorButton {
     width: 144px;

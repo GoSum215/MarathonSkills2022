@@ -26,8 +26,8 @@ class RegistrationRequest extends FormRequest
         return [
             'login' => 'required|unique:users|between:5, 30|regex:/^[a-z0-9_-]+$/i',
             'password' => 'required|regex:/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*.,])[0-9a-zA-Z!@#$%^&*.,]{5,30}/',
-            'surname' => 'required|regex:/^[\w\. -]{5,50}$/',
-            'name' => 'required|regex:/^[\w\. -]{5,30}$/',
+            'surname' => 'required|string|max:40',
+            'name' => 'required|string|max:30',
             'email' => 'nullable|unique:users|string|max:100|regex:/^[^@]+(@)[^.@]+(.)[^.@]+$/',
         ];
     }
